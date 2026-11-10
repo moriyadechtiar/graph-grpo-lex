@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use GRAPH-GRPO-LEX or the contract linter, please cite the paper below."
+title: "GRAPH-GRPO-LEX: contract graph modeling, gated GRPO training, and contract linter"
+authors:
+  - family-names: Dechtiar
+    given-names: Moriya
+repository-code: "https://github.com/moriyadechtiar/graph-grpo-lex"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  title: "GRAPH-GRPO-LEX: Contract Graph Modeling and Reinforcement Learning with Group Relative Policy Optimization"
+  authors:
+    - family-names: Dechtiar
+      given-names: Moriya
+    - family-names: Katz
+      given-names: Daniel Martin
+    - family-names: Sundaresan
+      given-names: Mari
+    - family-names: Jaume
+      given-names: Sylvain
+    - family-names: Wang
+      given-names: Hongming
+  collection-title: "2025 IEEE International Conference on Data Mining Workshops (ICDMW)"
+  start: 767
+  end: 776
+  year: 2025
+  doi: "10.1109/ICDMW69685.2025.00092"

@@ -1,0 +1,25 @@
+{
+  "contract_id": "EXAMPLE-NDA (constructed illustration)",
+  "nodes": [
+    {"id": "1",   "node_type": "CLAUSE", "title": "Definitions", "level": 1},
+    {"id": "1.2", "node_type": "CLAUSE", "title": "1.2", "level": 2},
+    {"id": "4",   "node_type": "CLAUSE", "title": "Permitted Disclosure", "level": 1},
+    {"id": "4.1", "node_type": "CLAUSE", "title": "4.1", "level": 2},
+    {"id": "4.2", "node_type": "CLAUSE", "title": "4.2", "level": 2},
+    {"id": "term:Affiliate", "node_type": "DEFINED_TERM", "name": "Affiliate"},
+    {"id": "term:Confidential Information", "node_type": "DEFINED_TERM", "name": "Confidential Information"},
+    {"id": "party:Recipient", "node_type": "PARTY", "name": "Recipient"}
+  ],
+  "edges": [
+    {"src": "1.2", "tgt": "1",   "type": "IS_PART_OF"},
+    {"src": "4.1", "tgt": "4",   "type": "IS_PART_OF"},
+    {"src": "4.2", "tgt": "4",   "type": "IS_PART_OF"},
+    {"src": "1.2", "tgt": "term:Affiliate", "type": "DEFINES"},
+    {"src": "4.1", "tgt": "term:Affiliate", "type": "USES"},
+    {"src": "4.2", "tgt": "term:Affiliate", "type": "USES"},
+    {"src": "4.1", "tgt": "term:Confidential Information", "type": "USES"},
+    {"src": "4.2", "tgt": "4.1", "type": "REFERENCES"},
+    {"src": "1.2", "tgt": "party:Recipient", "type": "MENTIONS_PARTY"},
+    {"src": "4.1", "tgt": "party:Recipient", "type": "MENTIONS_PARTY"}
+  ]
+}

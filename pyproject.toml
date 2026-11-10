@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contract-linter"
+version = "0.1.0"
+description = "Structural checks and graph metrics for contract graphs (GRAPH-GRPO-LEX)"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Moriya Dechtiar" }]
+dependencies = ["networkx>=2.8"]
+
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
+[project.scripts]
+contract-linter = "contract_linter.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/moriyadechtiar/graph-grpo-lex"
+Paper = "https://doi.org/10.1109/ICDMW69685.2025.00092"
+
+[tool.setuptools]
+packages = ["contract_linter"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
